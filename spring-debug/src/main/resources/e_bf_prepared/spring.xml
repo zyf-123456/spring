@@ -30,6 +30,7 @@
         </property>
     </bean>
 
+    <!--直接配置到CustomEditorConfigurer-->
     <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
         <property name="customEditors">
             <map>
