@@ -1,12 +1,10 @@
-package com.mashibing.selfAware;
+package com.mashibing.f_selfAware;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.*;
 
 import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
 
 public class MyAwareProcessor implements BeanPostProcessor {
 
@@ -16,6 +14,9 @@ public class MyAwareProcessor implements BeanPostProcessor {
         this.applicationContext = applicationContext;
     }
 
+    /**
+     * 设置上下文环境。
+     */
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 
