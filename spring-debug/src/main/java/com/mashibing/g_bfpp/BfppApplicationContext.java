@@ -1,6 +1,6 @@
 package com.mashibing.g_bfpp;
 
-import com.mashibing.e_bf_prepared.Customer;
+import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -17,14 +17,15 @@ public class BfppApplicationContext extends  ClassPathXmlApplicationContext{
         super(configLocations);
     }
 
-    public static void main(String[] args) {
-        //测试加载
-        ApplicationContext context = new BfppApplicationContext("/g_bfpp/spring.xml");
-    }
-
     //通过类的方式添加bfpp
     @Override
     protected void customizeBeanFactory(DefaultListableBeanFactory beanFactory) {
+        System.out.println("拓展实现");
         super.addBeanFactoryPostProcessor(new MyBfpp());
+    }
+
+    public static void main(String[] args) {
+        //测试加载
+        ApplicationContext context = new BfppApplicationContext("/g_bfpp/spring.xml");
     }
 }

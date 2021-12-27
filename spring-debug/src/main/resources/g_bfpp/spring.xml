@@ -7,7 +7,8 @@
         http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
         ">
 <!--    &lt;!&ndash;自定义bfpp&ndash;&gt;-->
-<!--    <bean id="myBfpp" name="person1" class="com.mashibing.g_bfpp.MyBfpp">-->
+    <context:component-scan base-package="com.mashibing.g_bfpp"></context:component-scan>
+    <bean id="myBfpp" name="person1" class="com.mashibing.g_bfpp.MyBfpp"></bean>
 <!--    </bean>-->
 <!--    <bean id="person" name="person1,person2,person3" class="com.mashibing.Person">-->
 <!--        <description>描述信息</description>-->

@@ -18,5 +18,4 @@ public class MyBfpp implements BeanFactoryPostProcessor {
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
         System.out.println("=======================");
     }
-
 }
