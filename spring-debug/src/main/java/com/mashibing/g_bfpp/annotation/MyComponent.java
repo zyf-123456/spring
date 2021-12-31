@@ -1,4 +1,4 @@
-package com.mashibing.g_bfpp;
+package com.mashibing.g_bfpp.annotation;
 
 import org.springframework.stereotype.Component;
 
