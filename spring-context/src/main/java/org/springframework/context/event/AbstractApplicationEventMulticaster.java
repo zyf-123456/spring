@@ -218,7 +218,7 @@ public abstract class AbstractApplicationEventMulticaster
 	 * @return a Collection of ApplicationListeners
 	 * @see org.springframework.context.ApplicationListener
 	 */
-	protected Collection<ApplicationListener<?>> getApplicationListeners(
+	protected Collection<ApplicationListener<?>> 	getApplicationListeners(
 			ApplicationEvent event, ResolvableType eventType) {
 
 		//event.getSource:事件最初在其上发生的对象。

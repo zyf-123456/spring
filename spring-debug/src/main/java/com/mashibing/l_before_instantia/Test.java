@@ -1,4 +1,4 @@
-package com.mashibing.resolveBeforeInstantiation;
+package com.mashibing.l_before_instantia;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

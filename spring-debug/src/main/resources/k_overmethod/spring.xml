@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:msb="http://www.mashibing.com/schema/user"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.mashibing.com/schema/user http://www.mashibing.com/schema/user.xsd">
+
+    <bean id="apple" class="com.mashibing.k_overmethod.lookup.Apple">
+        <property name="banana" ref="banana"></property>
+    </bean>
+
+    <bean id="banana" class="com.mashibing.k_overmethod.lookup.Banana"  >
+    </bean>
+
+    <bean id="fruitplate1" class="com.mashibing.k_overmethod.lookup.FruitPlate">
+        <lookup-method name="getFruit" bean="apple"></lookup-method>
+    </bean>
+
+    <bean id="fruitplate2" class="com.mashibing.k_overmethod.lookup.FruitPlate">
+        <lookup-method name="getFruit" bean="banana"></lookup-method>
+    </bean>
+</beans>

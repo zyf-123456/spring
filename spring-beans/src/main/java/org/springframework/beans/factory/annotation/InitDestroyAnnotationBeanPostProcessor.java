@@ -353,7 +353,7 @@ public class InitDestroyAnnotationBeanPostProcessor
 			Set<LifecycleElement> checkedDestroyMethods = new LinkedHashSet<>(this.destroyMethods.size());
 			for (LifecycleElement element : this.destroyMethods) {
 				String methodIdentifier = element.getIdentifier();
-				if (!beanDefinition.isExternallyManagedDestroyMethod(methodIdentifier)) {
+				if (!	beanDefinition.isExternallyManagedDestroyMethod(methodIdentifier)) {
 					// 注册销毁调用方法
 					beanDefinition.registerExternallyManagedDestroyMethod(methodIdentifier);
 					checkedDestroyMethods.add(element);

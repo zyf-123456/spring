@@ -1333,12 +1333,11 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * @see MergedBeanDefinitionPostProcessor#postProcessMergedBeanDefinition
 	 */
 	protected void applyMergedBeanDefinitionPostProcessors(RootBeanDefinition mbd, Class<?> beanType, String beanName) {
-		for (BeanPostProcessor bp : getBeanPostProcessors()) {
+		for (BeanPostProcessor bp : getBeanPostProcessors())
 			if (bp instanceof MergedBeanDefinitionPostProcessor) {
 				MergedBeanDefinitionPostProcessor bdp = (MergedBeanDefinitionPostProcessor) bp;
 				bdp.postProcessMergedBeanDefinition(mbd, beanType, beanName);
 			}
-		}
 	}
 
 	/**
@@ -1362,6 +1361,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 				// 获取类型
 				Class<?> targetType = determineTargetType(beanName, mbd);
 				if (targetType != null) {
+					//postProcessBeforeInstantiation
 					bean = applyBeanPostProcessorsBeforeInstantiation(targetType, beanName);
 					if (bean != null) {
 						bean = applyBeanPostProcessorsAfterInitialization(bean, beanName);
