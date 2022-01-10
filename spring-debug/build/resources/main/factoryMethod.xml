@@ -7,7 +7,7 @@
         <constructor-arg value="123"></constructor-arg>
     </bean>
     <bean id="personInstanceFactory" class="com.mashibing.factoryMethod.PersonInstanceFactory"></bean>
-    <bean id="person2" class="com.mashibing.factoryMethod.Person" factory-bean="personInstanceFactory" factory-method="getPerson">
+    <bean id="person2" class="com.mashibing.n_factory_method.Person" factory-bean="personInstanceFactory" factory-method="getPerson">
         <constructor-arg value="wangwu"></constructor-arg>
     </bean>
 </beans>
