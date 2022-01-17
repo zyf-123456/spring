@@ -1,4 +1,4 @@
-package com.mashibing.proxy.cglib;
+package com.mashibing.w_aop.proxy.cglib;
 
 import org.springframework.cglib.proxy.MethodInterceptor;
 import org.springframework.cglib.proxy.MethodProxy;

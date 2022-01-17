@@ -1,4 +1,4 @@
-package com.mashibing.aop.xml.util;
+package com.mashibing.w_aop.xml.util;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;

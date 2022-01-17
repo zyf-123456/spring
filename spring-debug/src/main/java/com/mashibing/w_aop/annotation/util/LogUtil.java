@@ -1,10 +1,9 @@
-package com.mashibing.aop.annotation.util;
+package com.mashibing.w_aop.annotation.util;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.*;
-import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
@@ -13,7 +12,7 @@ import java.util.Arrays;
 @Component
 public class LogUtil {
 
-    @Pointcut("execution(public Integer com.mashibing.aop.annotation.service.MyCalculator.*(Integer,Integer))")
+    @Pointcut("execution(public Integer com.mashibing.w_aop.annotation.service.MyCalculator.*(Integer,Integer))")
     public void myPointCut(){}
 
 //    @Pointcut("execution(* *(..))")

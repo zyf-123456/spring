@@ -10,6 +10,11 @@
     <bean class="com.mashibing.MyBeanFactoryPostProcessorBySelf" ></bean>
     <bean id="logUtil" class="com.mashibing.w_aop.xml.util.LogUtil" ></bean>
     <bean id="myCalculator" class="com.mashibing.w_aop.xml.service.MyCalculator" ></bean>
+
+    <!--注解生效配置-->
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+    <!--切面-->
     <aop:config>
         <aop:aspect ref="logUtil">
             <aop:pointcut id="myPoint" expression="execution( Integer com.mashibing.w_aop.xml.service.MyCalculator.*  (..))"/>
@@ -20,5 +25,4 @@
             <aop:after-throwing method="logException" pointcut-ref="myPoint" throwing="e"></aop:after-throwing>
         </aop:aspect>
     </aop:config>
-    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
 </beans>

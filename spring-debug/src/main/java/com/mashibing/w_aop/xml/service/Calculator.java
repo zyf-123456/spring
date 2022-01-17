@@ -1,4 +1,4 @@
-package com.mashibing.aop.xml.service;
+package com.mashibing.w_aop.xml.service;
 
 
 

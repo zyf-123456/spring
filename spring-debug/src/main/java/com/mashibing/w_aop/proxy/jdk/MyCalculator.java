@@ -1,6 +1,6 @@
-package com.mashibing.proxy.cglib;
+package com.mashibing.w_aop.proxy.jdk;
 
-public class MyCalculator {
+public class MyCalculator implements Calculator {
     public int add(int i, int j) {
         int result = i + j;
         return result;

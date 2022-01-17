@@ -1,4 +1,4 @@
-package com.mashibing.proxy.cglib;
+package com.mashibing.w_aop.proxy.cglib;
 
 import org.springframework.cglib.core.DebuggingClassWriter;
 import org.springframework.cglib.proxy.Enhancer;

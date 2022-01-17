@@ -1,7 +1,7 @@
-package com.mashibing.aop.annotation;
+package com.mashibing.w_aop.annotation;
 
-import com.mashibing.aop.annotation.config.SpringConfiguration;
-import com.mashibing.aop.annotation.service.MyCalculator;
+import com.mashibing.w_aop.annotation.config.SpringConfiguration;
+import com.mashibing.w_aop.annotation.service.MyCalculator;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class TestAnnotationAop {

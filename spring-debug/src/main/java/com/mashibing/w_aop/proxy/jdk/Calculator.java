@@ -1,4 +1,4 @@
-package com.mashibing.proxy.jdk;
+package com.mashibing.w_aop.proxy.jdk;
 
 public interface Calculator {
 
